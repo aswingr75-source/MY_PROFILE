@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Aswin GR — CSE student at Toch Institute of Science and Technology exploring AI, ML and Full Stack Development." />
+  <title>Aswin GR — Computer Science Engineering Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="scroll-progress"></div>
+  <div id="mouse-glow"></div>
+  <div id="particles" class="fixed-layer"></div>
+
+  <div class="fixed-layer">
+    <div class="shape float" style="top:15%;left:8%;width:90px;height:90px;"></div>
+    <div class="shape float" style="top:60%;right:10%;width:140px;height:140px;border-radius:50%;animation-delay:1.5s;"></div>
+    <div class="shape float" style="top:35%;right:30%;width:60px;height:60px;animation-delay:.8s;"></div>
+    <div class="shape float" style="bottom:10%;left:15%;width:110px;height:110px;border-radius:30%;animation-delay:2.2s;"></div>
+  </div>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div id="loader-particles" class="fixed-layer"></div>
+    <div class="loader-inner">
+      <p class="kicker">Hello 👋</p>
+      <h1 class="neon-text caret">I'm <span id="typed"></span></h1>
+      <p class="muted">Computer Science Engineering Student</p>
+      <button id="enter-btn" class="btn-neon" disabled>Enter Portfolio →</button>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-wrap glass">
+      <a href="#home" class="logo neon-text">ASWIN GR</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="avatar-wrap">
+        <div class="avatar-ring float">
+          <div class="avatar-inner">
+            <img src="assets/profile.jpeg" alt="Aswin GR" class="avatar-img" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="kicker">Hello 👋 I'm</p>
+        <h1 class="hero-name" id="hero-name"></h1>
+        <p class="role">Computer Science Engineering Student</p>
+        <p class="muted">Toch Institute of Science and Technology · 2nd Year B.Tech</p>
+        <p class="bio">
+          I am a passionate Computer Science Engineering student exploring Artificial Intelligence,
+          Machine Learning and Full Stack Development. I enjoy building innovative software solutions
+          and continuously improving my problem-solving skills.
+        </p>
+        <div class="btn-row">
+          <a href="#resume" class="btn-neon ripple">View Resume</a>
+          <a href="#contact" class="btn-ghost ripple">Contact Me</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">SCROLL ↓</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="reveal heading">
+        <p class="kicker accent">Get to know</p>
+        <h2 class="neon-text">About Me</h2>
+        <div class="divider"></div>
+      </div>
+      <p class="reveal center muted maxw">
+        Dedicated Computer Science Engineering student passionate about software development,
+        AI technologies and innovative problem solving.
+      </p>
+      <div class="grid-2 mt">
+        <div class="reveal card glass glass-hover">
+          <p class="tag">EDUCATION</p>
+          <h3>B.Tech Computer Science Engineering</h3>
+          <p class="muted">Toch Institute of Science and Technology</p>
+          <p class="muted">Currently Pursuing 2nd Year</p>
+        </div>
+        <div class="reveal card glass glass-hover">
+          <p class="tag">LOCATION</p>
+          <h3>Ernakulam, Kochi</h3>
+          <p class="muted">Kerala, India</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERESTS -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal heading">
+        <p class="kicker accent">What drives me</p>
+        <h2 class="neon-text">Areas of Interest</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="grid-4">
+        <div class="reveal card glass glass-hover center"><div class="emoji">🤖</div><h3>Artificial Intelligence</h3></div>
+        <div class="reveal card glass glass-hover center"><div class="emoji">🧠</div><h3>Machine Learning</h3></div>
+        <div class="reveal card glass glass-hover center"><div class="emoji">💻</div><h3>Full Stack Development</h3></div>
+        <div class="reveal card glass glass-hover center"><div class="emoji">🎯</div><h3>Problem Solving</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container narrow">
+      <div class="reveal heading">
+        <p class="kicker accent">Toolbox</p>
+        <h2 class="neon-text">Skills</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="skills-list">
+        <div class="reveal skill-card glass glass-hover">
+          <div class="skill-head"><span>Python</span><span class="accent" data-counter="90">0%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-bar="90"></div></div>
+        </div>
+        <div class="reveal skill-card glass glass-hover">
+          <div class="skill-head"><span>C</span><span class="accent" data-counter="80">0%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-bar="80"></div></div>
+        </div>
+        <div class="reveal skill-card glass glass-hover">
+          <div class="skill-head"><span>HTML</span><span class="accent" data-counter="90">0%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-bar="90"></div></div>
+        </div>
+        <div class="reveal skill-card glass glass-hover">
+          <div class="skill-head"><span>CSS</span><span class="accent" data-counter="85">0%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-bar="85"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="reveal heading">
+        <p class="kicker accent">Selected work</p>
+        <h2 class="neon-text">Projects</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="grid-2">
+        <div class="reveal flip">
+          <div class="flip-inner">
+            <div class="flip-face glass neon-border">
+              <p class="tag">PROJECT</p>
+              <h3>MoneyLens AI</h3>
+              <div class="chips"><span>Python</span><span>AI</span><span>Vision</span></div>
+              <p class="muted small mt-auto">Hover to see details →</p>
+            </div>
+            <div class="flip-face flip-back glass neon-border">
+              <h3>MoneyLens AI</h3>
+              <p class="muted small">AI-powered currency recognition and money management application that helps users identify currency notes and manage expenses efficiently.</p>
+              <div class="btn-row mt-auto">
+                <a href="https://github.com/aswingr75-source" target="_blank" rel="noopener" class="btn-ghost ripple small">GitHub</a>
+                <a href="#" class="btn-neon ripple small">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal flip">
+          <div class="flip-inner">
+            <div class="flip-face glass neon-border">
+              <p class="tag">PROJECT</p>
+              <h3>AI Medical Assistant</h3>
+              <div class="chips"><span>Python</span><span>Chatbot</span><span>Healthcare</span></div>
+              <p class="muted small mt-auto">Hover to see details →</p>
+            </div>
+            <div class="flip-face flip-back glass neon-border">
+              <h3>AI Medical Assistant</h3>
+              <p class="muted small">AI-powered healthcare assistant providing symptom guidance, medicine reminders, emergency support information and chatbot interaction.</p>
+              <div class="btn-row mt-auto">
+                <a href="https://github.com/aswingr75-source" target="_blank" rel="noopener" class="btn-ghost ripple small">GitHub</a>
+                <a href="#" class="btn-neon ripple small">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal flip">
+          <div class="flip-inner">
+            <div class="flip-face glass neon-border">
+              <p class="tag">WORK IN PROGRESS</p>
+              <h3>Coming Soon</h3>
+              <div class="chips"><span>TBA</span></div>
+              <p class="muted small mt-auto">Hover to see details →</p>
+            </div>
+            <div class="flip-face flip-back glass neon-border">
+              <h3>Coming Soon</h3>
+              <p class="muted small">A new project is on the way. Stay tuned!</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal flip">
+          <div class="flip-inner">
+            <div class="flip-face glass neon-border">
+              <p class="tag">WORK IN PROGRESS</p>
+              <h3>Coming Soon</h3>
+              <div class="chips"><span>TBA</span></div>
+              <p class="muted small mt-auto">Hover to see details →</p>
+            </div>
+            <div class="flip-face flip-back glass neon-border">
+              <h3>Coming Soon</h3>
+              <p class="muted small">Another exciting build in progress.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="section">
+    <div class="container narrow">
+      <div class="reveal heading">
+        <p class="kicker accent">Credentials</p>
+        <h2 class="neon-text">Resume</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="reveal card glass neon-border center pad-lg">
+        <p class="muted">Take a closer look at my education, skills and projects.</p>
+        <div class="btn-row center-row mt">
+          <a href="assets/resume.pdf" target="_blank" rel="noopener" class="btn-neon ripple">📄 View Resume</a>
+          <a href="assets/resume.pdf" download class="btn-ghost ripple">⬇ Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="reveal heading">
+        <p class="kicker accent">Say hello</p>
+        <h2 class="neon-text">Contact</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="grid-2">
+        <a href="mailto:aswingr75@gmail.com" class="reveal card glass glass-hover ripple block">
+          <p class="tag">EMAIL</p>
+          <p class="big">aswingr75@gmail.com</p>
+        </a>
+        <div class="reveal card glass glass-hover">
+          <p class="tag">LOCATION</p>
+          <p class="big">Ernakulam, Kochi</p>
+        </div>
+      </div>
+      <div class="reveal btn-row center-row mt">
+        <a href="https://github.com/aswingr75-source" target="_blank" rel="noopener" class="btn-ghost ripple">GitHub</a>
+        <a href="https://www.linkedin.com/in/aswin-g-r-52012037b" target="_blank" rel="noopener" class="btn-neon ripple">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-divider"></div>
+      <p class="center muted small">© 2026 Aswin GR · Built with HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <button id="back-top" aria-label="Back to top">↑</button>
+
+  <button id="chat-toggle" class="btn-neon" aria-label="Open chatbot">💬</button>
+  <div id="chat-panel" class="glass neon-border">
+    <div class="chat-head">
+      <span class="dot"></span>
+      <p>Portfolio Assistant</p>
+    </div>
+    <div id="chat-body"></div>
+    <div class="chat-input">
+      <input id="chat-input" type="text" placeholder="Ask about skills, projects…" />
+      <button id="chat-send" class="btn-neon">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
